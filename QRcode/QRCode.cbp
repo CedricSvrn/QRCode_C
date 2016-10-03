@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="QRCode" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Release">
+				<Option output="bin/Release/QRCode" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add directory="C:/Codeblocks/SDL/include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="C:/Codeblocks/SDL/lib" />
+			<Add directory="C:/Codeblocks/SDL/bin" />
+		</ResourceCompiler>
+		<Linker>
+			<Add library="C:\Codeblocks\SDL\lib\libSDL.dll.a" />
+			<Add library="C:\Codeblocks\SDL\lib\libSDLmain.a" />
+			<Add library="C:\Codeblocks\SDL\lib\SDL_image.lib" />
+			<Add library="C:\Codeblocks\SDL\lib\SDL_ttf.lib" />
+			<Add library="C:\Codeblocks\MinGW\lib\libmingw32.a" />
+			<Add directory="C:/Codeblocks/SDL/lib" />
+			<Add directory="C:/Codeblocks/SDL/bin" />
+		</Linker>
+		<Unit filename="fonctions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="fonctions.h" />
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
